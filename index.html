@@ -1,15 +1,19 @@
+
 <!DOCTYPE html>
 
 <html>
 
   <head>
-<title>DownIT</title>
-    
+
+    <title>Redirect Box</title>
+
+    <script>
+
       function redirectToInputValue() {
 
         const inputValue = document.getElementById("redirectInput").value;
 
-        window.location.href = `https://play.google.com/store/apps/details?id=${inputValue}`;
+        window.location.href = `https://example.com?${inputValue}`;
 
       }
 
@@ -18,9 +22,8 @@
   </head>
 
   <body>
-<h4> get playstore download link by putting package name.
-
-    <script> </h4>
+<h4> Get To Playstore By putting app package name </h4>
+    
     <form onsubmit="redirectToInputValue(); return false;">
 
       <input type="text" id="redirectInput" name="redirectInput" placeholder="Type here...">
@@ -32,4 +35,7 @@
   </body>
 
 </html>
+name
+
+
 
