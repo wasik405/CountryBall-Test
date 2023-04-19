@@ -1,3 +1,18 @@
-<head> <body> 
-<h1> hi </h1>
-</head> </body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redirect Box</title>
+    <script>
+      function redirectToInputValue() {
+        const inputValue = document.getElementById("redirectInput").value;
+        window.location.href = `https://apkcombo.com/apk-downloader/?q=${inputValue}`;
+      }
+    </script>
+  </head>
+  <body>
+    <form onsubmit="redirectToInputValue(); return false;">
+      <input type="text" id="redirectInput" name="redirectInput" placeholder="Type here...">
+      <button type="submit">Go</button>
+    </form>
+  </body>
+</html>
