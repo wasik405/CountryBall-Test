@@ -1,18 +1,27 @@
 <!DOCTYPE html>
+
 <html>
-  <head>
-    <title>Redirect Box</title>
-    <script>
-      function redirectToInputValue() {
-        const inputValue = document.getElementById("redirectInput").value;
-        window.location.href = `https://storage.evozi.com/apk/dl/16/09/04/${inputValue}.apk`;
-      }
-    </script>
-  </head>
-  <body>
-    <form onsubmit="redirectToInputValue(); return false;">
-      <input type="text" id="redirectInput" name="redirectInput" placeholder="Type here...">
-      <button type="submit">Go</button>
-    </form>
-  </body>
+
+<head>
+
+  <title>YouTube Video Downloader</title>
+
+</head>
+
+<body>
+
+  <form>
+
+    <label for="video-url">YouTube Video URL:</label>
+
+    <input type="text" id="video-url" name="video-url">
+
+    <button type="submit">Download</button>
+
+  </form>
+
+</body>
+
 </html>
+
+ 
